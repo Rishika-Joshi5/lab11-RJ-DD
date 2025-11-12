@@ -22,7 +22,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(subtract(4, 8), -4)
 
         self.assertNotEqual(subtract(6, 3), 4)
-        self.assertNotEqual(subtract(-6, 3), -9)
+        self.assertEqual(subtract(-6, 3), -9)
 
 
     def test_multiply(self): # 3 assertions
