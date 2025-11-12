@@ -26,13 +26,25 @@ class TestCalculator(unittest.TestCase):
         self.assertNotEqual(sub(-6, 3), -3)
 
 
-    ######## Partner 1
-    # def test_multiply(self): # 3 assertions
-    #     fill in code
+    def test_multiply(self): # 3 assertions
+        self.assertEqual(mul(2, 3), 6)
+        self.assertEqual(mul(-2, 2), -4)
+        self.assertEqual(mul(-4, -4), 16)
 
-    # def test_divide(self): # 3 assertions
-    #     fill in code
-    # ##########################
+        self.assertNotEqual(mul(3, 3), 8)
+        self.assertNotEqual(mul(-3, 3), 9)
+        self.assertNotEqual(mul(8, 3), 5)
+        self.assertNotEqual(mul(4, 8), -4)
+
+
+    def test_divide(self): # 3 assertions
+        self.assertEqual(div(6, 3), 2)
+        self.assertEqual(div(-6, 3), -2)
+        self.assertEqual(div(-3, -3), 1)
+
+        self.assertNotEqual(div(2, 2), -2)
+        self.assertNotEqual(div(-3, -3), 0)
+        self.assertNotEqual(div(10, 3), 5)
 
     def test_divide_by_zero(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):
