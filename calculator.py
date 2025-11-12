@@ -4,7 +4,10 @@ calculator.py
 
 One function per operation, in order.
 """
-# First example
+# https://github.com/Rishika-Joshi5/lab11-RJ-DD
+# Partner 1:
+# Partner 2: Diya Dipu Nair
+
 import math
 def square_root(a):
     if a < 0:
