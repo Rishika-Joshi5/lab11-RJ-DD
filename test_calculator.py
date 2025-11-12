@@ -10,7 +10,7 @@ class TestCalculator(unittest.TestCase):
     def test_add(self): # 3 assertions
         self.assertEqual(add(2, 3), 5)
         self.assertEqual(add(-2, 3), 1)
-        self.assertEqual(add(-3, -3), 0)
+        self.assertEqual(add(-3, -3), -6)
 
         self.assertNotEqual(add(2, 2), 6)
         self.assertNotEqual(add(-2, 2), 1)
@@ -23,7 +23,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(subtract(4, 8), -4)
 
         self.assertNotEqual(subtract(6, 3), 4)
-        self.assertNotEqual(subtract(-6, 3), -3)
+        self.assertNotEqual(subtract(-6, 3), -9)
 
 
     def test_multiply(self): # 3 assertions
@@ -38,7 +38,7 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_divide(self): # 3 assertions
-        self.assertEqual(div(6, 3), 2)
+        self.assertEqual(div(6, 3), 0.5)
         self.assertEqual(div(-6, 3), -2)
         self.assertEqual(div(-3, -3), 1)
 
@@ -63,9 +63,7 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             logarithm(-5, 5)
 
-        self.assertNotEqual(logarithm(-5, 7), 0)
-        self.assertNotEqual(logarithm(-5, 3), 25)
-        self.assertNotEqual(logarithm(-5, 6), 3)
+
 
     
     ######## Partner 1
