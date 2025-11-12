@@ -16,14 +16,14 @@ class TestCalculator(unittest.TestCase):
         self.assertNotEqual(add(-2, 2), 1)
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(sub(5, 2), 3)
-        self.assertEqual(sub(-6, 3), -3)
-        self.assertEqual(sub(-3, -3), 0)
-        self.assertEqual(sub(8, -3), 5)
-        self.assertEqual(sub(4, 8), -4)
+        self.assertEqual(subtract(5, 2), 3)
+        self.assertEqual(subtract(-6, 3), -3)
+        self.assertEqual(subtract(-3, -3), 0)
+        self.assertEqual(subtract(8, -3), 5)
+        self.assertEqual(subtract(4, 8), -4)
 
-        self.assertNotEqual(sub(6, 3), 4)
-        self.assertNotEqual(sub(-6, 3), -3)
+        self.assertNotEqual(subtract(6, 3), 4)
+        self.assertNotEqual(subtract(-6, 3), -3)
 
 
     def test_multiply(self): # 3 assertions
@@ -55,17 +55,17 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_logarithm(self): # 3 assertions
-        self.assertEqual(log(3, 9), 2)
-        self.assertEqual(log(5, 25), 2)
-        self.assertEqual(log(2, 16), 4)
+        self.assertEqual(logarithm(3, 9), 2)
+        self.assertEqual(logarithm(5, 25), 2)
+        self.assertEqual(logarithm(2, 16), 4)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(-5, 5)
+            logarithm(-5, 5)
 
-        self.assertNotEqual(log(-5, 7), 0)
-        self.assertNotEqual(log(-5, 3), 25)
-        self.assertNotEqual(log(-5, 6), 3)
+        self.assertNotEqual(logarithm(-5, 7), 0)
+        self.assertNotEqual(logarithm(-5, 3), 25)
+        self.assertNotEqual(logarithm(-5, 6), 3)
 
     
     ######## Partner 1
