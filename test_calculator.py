@@ -1,5 +1,5 @@
 # https://github.com/Rishika-Joshi5/lab11-RJ-DD
-# Partner 1:
+# Partner 1: Rishika Joshi
 # Partner 2: Diya Dipu Nair
 
 
